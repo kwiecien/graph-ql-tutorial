@@ -1,0 +1,58 @@
+query {
+  feed {
+    id
+    description
+    url
+  }
+}
+
+mutation {
+  post(url: "www.iteratec.com", description: "iteratec") {
+    id
+    description
+    url
+  }
+}
+
+query {
+  link(id: "2") {
+    id
+    description
+    url
+  }
+}
+
+mutation {
+  updateLink(id: 2, description: "iteratec gmbh") {
+    id
+    description
+    url
+  }
+}
+
+mutation {
+  deleteLink(id: 2) {
+    id
+    description
+    url
+  }
+}
+
+mutation CreatePrismaLink {
+  post(
+    description: "Prisma turns your database into a GraphQL API 😎",
+  	url: "https://www.prismagraphql.com"
+  ) {
+    id
+  }
+}
+
+mutation CreateApolloLink {
+  post(
+    description: "The best GraphQL client for React",
+    url: "https://www.apollographql.com/docs/react/"
+  ) {
+    id
+  }
+}
+
