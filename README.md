@@ -69,6 +69,20 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-# Prisma
+# App
+
+## Frontend
+yarn start
+
+## Backend
+``
+cd server
+node src/index.js
+``
+
 ## Prisma Studio
-`npx prisma studio --experimental`
+``
+cd server
+npx prisma studio --experimental
+``
+
