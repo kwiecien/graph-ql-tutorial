@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import Link from "./Link";
-import gql from 'graphql-tag'
+import {gql} from 'apollo-boost'
 import {Query} from 'react-apollo'
 
 const FEED_QUERY = gql`

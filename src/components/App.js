@@ -1,9 +1,13 @@
 import '../styles/App.css';
 import LinkList from "./LinkList";
 import React from "react";
+import CreateLink from "./CreateLink";
 
 function App() {
-    return <LinkList/>
+    return <>
+        <CreateLink/>
+        <LinkList/>
+    </>
 }
 
 export default App;
