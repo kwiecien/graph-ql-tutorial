@@ -80,9 +80,22 @@ cd server
 node src/index.js
 ``
 
+## Prisma
+After every change you make to the data model,
+you need to migrate your database and then re-generate Prisma Client.
+
+```
+cd server
+npx prisma migrate save --experimental
+# or
+npx prisma migrate save --name "add-user-model" --experimental
+npx prisma migrate up --experimental
+npx prisma generate
+```
+
 ## Prisma Studio
-``
+```
 cd server
 npx prisma studio --experimental
-``
+```
 
