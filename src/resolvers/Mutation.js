@@ -40,6 +40,7 @@ async function post(parent, args, context, info) {
     })
 }
 
+// TODO remove?
 async function updateLink(parent, args, context) {
     return await context.prisma.link.update({
         where: {id: Number(args.id)},
@@ -50,6 +51,7 @@ async function updateLink(parent, args, context) {
     })
 }
 
+// TODO remove?
 async function deleteLink(parent, args, context) {
     return await context.prisma.link.delete({
         where: {id: Number(args.id)},
