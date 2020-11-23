@@ -31,9 +31,9 @@ async function login(parent, args, context, info) {
     }
 }
 
-async function post(parent, args, context, info) {
+function post(parent, args, context, info) {
     let userId = getUserId(context);
-    return await context.prisma.link.create({
+    return context.prisma.link.create({
         data: {
             url: args.url,
             description: args.description,
@@ -42,8 +42,8 @@ async function post(parent, args, context, info) {
     })
 }
 
-async function updateLink(parent, args, context) {
-    return await context.prisma.link.update({
+function updateLink(parent, args, context) {
+    return context.prisma.link.update({
         where: {id: Number(args.id)},
         data: {
             ...args.url && {url: args.url},
@@ -52,8 +52,8 @@ async function updateLink(parent, args, context) {
     })
 }
 
-async function deleteLink(parent, args, context) {
-    return await context.prisma.link.delete({
+function deleteLink(parent, args, context) {
+    return context.prisma.link.delete({
         where: {id: Number(args.id)},
     })
 }
