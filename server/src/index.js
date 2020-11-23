@@ -1,7 +1,7 @@
-const Mutation = require("../../src/resolvers/Mutation");
-const Query = require("../../src/resolvers/Query");
-const User = require("../../src/resolvers/User");
-const Link = require("../../src/resolvers/Link");
+const Mutation = require("./resolvers/Mutation");
+const Query = require("./resolvers/Query");
+const User = require("./resolvers/User");
+const Link = require("./resolvers/Link");
 const {PrismaClient} = require('@prisma/client')
 const {GraphQLServer} = require('graphql-yoga')
 
